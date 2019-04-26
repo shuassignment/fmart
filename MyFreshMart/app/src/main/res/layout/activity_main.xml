@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            ads:cardCornerRadius="10dp"
+            ads:cardElevation="10dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+
+                tools:context="com.paridiz.kart.MainActivity">
+
+
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="See Products"-->
+                <!--android:onClick="productspage"/>-->
+
+
+                <!--todo check AutoCompleteTextView visibility-->
+                <AutoCompleteTextView
+                    android:id="@+id/autotvSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:clickable="true"
+                    android:completionThreshold="1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:hint="Please Select  Sub Category One"
+                    android:visibility="gone" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autotvSubCategoryTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:clickable="true"
+                    android:completionThreshold="1"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:hint="Please Select  Sub Category Two"
+                    android:visibility="gone" />
+
+
+                <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Sub Category Two"-->
+                <!--android:id="@+id/etSubCategoryTwo"/>-->
+
+
+                <EditText
+                    android:id="@+id/etProductTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn"
+
+                    android:hint="Product Name" />
+
+
+                <!--<RadioGroup-->
+                <!--android:id="@+id/radiogroup"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/radioDozon"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Dozon" />-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/radioGram"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Gram" />-->
+
+                <!--</RadioGroup>-->
+
+
+                <!--<EditText-->
+
+                <!--android:id="@+id/etProductDescrition"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/etProductTitle"-->
+                <!--android:clickable="true"-->
+
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:hint="Product Weight 1 (250gm)" />-->
+
+                <!--<EditText-->
+
+                <!--android:id="@+id/etProductWeight2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/etProductTitle"-->
+                <!--android:clickable="true"-->
+
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:hint="Product Weight 2 (500gm)" />-->
+
+                <!--<EditText-->
+
+                <!--android:id="@+id/etProductWeight3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/etProductTitle"-->
+                <!--android:clickable="true"-->
+
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:hint="Product Weight 3 (1kg)" />-->
+
+                <Button
+                    android:id="@+id/btnWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background"
+                    android:text="Weight"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="@dimen/_35sdp"
+                    android:layout_marginRight="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                <!--<EditText-->
+                <!--android:id="@+id/etProductPrice"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+
+                <!--android:clickable="true"-->
+                <!--android:foreground="?android:attr/selectableItemBackground"-->
+                <!--android:hint="Price"-->
+                <!--android:inputType="number" />-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/etProductDeliveryCharges"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Delivery Charges "-->
+                    <!--android:inputType="number" />-->
+
+                <EditText
+                    android:id="@+id/etRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remark" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/etQuantity"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Quantity" />-->
+
+                <CheckBox
+                    android:id="@+id/isProductAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="Is Product Available" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Select Image And Upload it"
+                    android:textColor="#fff" />
+
+
+                <Button
+                    android:id="@+id/btnProductSaveChanges"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="SAVE CHANGES"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/etProductPrice" />
+
+                <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="logout"-->
+                <!--android:onClick="logout"/>-->
+
+                <TextView
+                    android:id="@+id/error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+
+</RelativeLayout>

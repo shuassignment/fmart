@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            tools:context="com.paridiz.kart.CheckoutActivity">
+
+
+            <TextView
+                android:id="@+id/tvEligibleForCOD"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Congrats ... You are eligible for cash on delivery!!!"/>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="Delivery Address"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageButton
+                        android:id="@+id/ibCheckoutEditAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fff"
+                        android:onClick="addressActivity"
+                        android:src="@mipmap/ic_mode_edit_black_24dp"
+                        android:tint="@color/colorPrimary"/>
+
+                    <ImageButton
+                        android:id="@+id/ibCheckoutNewAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#fff"
+                        android:onClick="addressActivity"
+                        android:src="@mipmap/ic_add_black_24dp"
+                        android:tint="@color/colorPrimary"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/addressView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+
+                app:cardElevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/colorDarkBlack"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Mobile Number"
+                        android:textColor="@color/colorDarkBlack" />
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Address"
+                        android:textColor="@color/colorDarkBlack" />
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="City"
+                        android:textColor="@color/colorDarkBlack" />
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="State"
+                        android:textColor="@color/colorDarkBlack" />
+
+                    <TextView
+                        android:id="@+id/tvCheckoutAddressViewPincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pincode"
+                        android:textColor="@color/colorDarkBlack" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Order Summary"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                app:cardElevation="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Items:"
+                            android:textColor="@color/colorDarkBlack" />
+
+                        <TextView
+                            android:id="@+id/tvCheckoutOrderTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Amount"
+                            android:textColor="@color/colorFaintBlack"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Charges :"
+                            android:textColor="@color/colorDarkBlack" />
+
+                        <TextView
+                            android:id="@+id/tvCheckoutOrderDelivery"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Amount"
+                            android:textColor="@color/colorFaintBlack"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Total :"
+                            android:textColor="@color/colorDarkBlack" />
+
+                        <TextView
+                            android:id="@+id/tvCheckoutOrderTotalValue"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Amount"
+                            android:textColor="@color/colorFaintBlack"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_margin="10dp">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_location_on_black_24dp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Address" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_add_black_24dp" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:text="Select Mode of Payment"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbCod"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="?android:attr/selectableItemBackground"-->
+                <!--android:clickable="true"-->
+
+                <!--android:text="COD"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:textStyle="bold" />-->
+
+            <CheckBox
+                android:id="@+id/payUsingBhimUpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay using BHIM UPI"
+                android:textColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="@dimen/_8sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery time : "
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/ivDatePicker"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:tint="@color/colorPrimaryDark"
+                    android:src="@drawable/ic_chronometer"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:id="@+id/tvDeliveryTime"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorDarkBlack"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Place your Order"
+
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--android:onClick="placeorder"-->
+
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:com.google.android.gms.ads.AdViewandroid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context="com.paridiz.kart.ProductDescrpitionActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/llProductDescrition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/d"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/ivProductImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvProductName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp"
+                            android:text="Title"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvRemark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp"
+                            android:text="Remark"
+
+                            android:textAlignment="center"
+
+                            android:textColor="@color/colorFaintBlack"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvPriceWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/d"
+                        android:layout_margin="5dp"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:text="₹ "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tvDeliveryCharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Delivery Charges"
+                        android:textColor="@color/colorFaintBlack"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <!-- todo SIMILAR PRODUCTS -->
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--android:text="SIMILAR PRODUCTS"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textColor="#f77b0303"-->
+                    <!--android:layout_marginBottom="20dp"/>-->
+
+                    <!--<android.support.v7.widget.CardView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--ads:cardCornerRadius="8dp"-->
+                        <!--ads:cardElevation="10dp">-->
+
+                        <!--<android.support.v7.widget.RecyclerView-->
+                            <!--android:id="@+id/rvProductDescriptionRelated"-->
+
+
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@+id/d"-->
+                            <!--android:orientation="horizontal">-->
+
+                        <!--</android.support.v7.widget.RecyclerView>-->
+                    <!--</android.support.v7.widget.CardView>-->
+
+                </LinearLayout>
+                <!--<ImageView-->
+                <!--android:id="@+id/ivProductDescrpitionActivityImage"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@mipmap/ic_launcher_round"-->
+                <!--android:adjustViewBounds="true"/>-->
+            </android.support.v7.widget.CardView>
+
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/rbProductDescrpitionActivityRatingStars"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center" />-->
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<Button-->
+            <!--android:id="@+id/btnProductDescrpitionActivityBuyNow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="buynow"-->
+            <!--android:background="@drawable/et_background"-->
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+            <!--android:text="Buy Now"-->
+            <!--android:textColor="@color/colorPrimaryDark" />-->
+
+
+            <Button
+                android:id="@+id/btnProductDescrpitionActivityAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@drawable/et_background"
+
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="AddProductToCart"
+                android:text="Add to Cart"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--<com.google.android.gms.ads.AdView-->
+    <!--android:id="@+id/adView"-->
+    <!--ads:adSize="BANNER"-->
+    <!--ads:adUnitId="@string/banner_home_footer"-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</com.google.android.gms.ads.AdView>-->
+</RelativeLayout>

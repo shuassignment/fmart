@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "851045261944",
+    "firebase_url": "https://my-fresh-mart.firebaseio.com",
+    "project_id": "my-fresh-mart",
+    "storage_bucket": "my-fresh-mart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851045261944:android:8b74c71a0eeadd25",
+        "android_client_info": {
+          "package_name": "com.my.fresh.mart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851045261944-t7e18c2hgju4lqat0r66m95jfr422bl0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.my.fresh.mart",
+            "certificate_hash": "3a3ef4448315a4a928195b36aaf54df8d636e358"
+          }
+        },
+        {
+          "client_id": "851045261944-undqbsf5ucpogvtip2l6vpu191i92l3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtLfFHY1-93J87TNB8TDP5AxlCX0p0hZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851045261944-undqbsf5ucpogvtip2l6vpu191i92l3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

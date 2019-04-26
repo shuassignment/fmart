@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min cart value to checkout"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etMinCartValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter minimum cart value"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnSaveMinCartValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Save Minimum Value"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eeeeee"
+        android:layout_margin="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charges"
+            android:textAlignment="center" />
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upto Rs. "/>
+            <EditText
+                android:id="@+id/aUpto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 100 "
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charges will be Rs."/>
+            <EditText
+                android:id="@+id/aCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 10 "
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upto Rs. "/>
+            <EditText
+                android:id="@+id/bUpto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 500 "
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charges will be Rs."/>
+            <EditText
+                android:id="@+id/bCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 20 "
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upto Rs. "/>
+            <EditText
+                android:id="@+id/cUpto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 999 "
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charges will be Rs."/>
+            <EditText
+                android:id="@+id/cCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 10 "
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="above Rs. "/>
+            <EditText
+                android:id="@+id/dUpto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 1000 "
+                android:inputType="numberDecimal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charges will be Rs."/>
+            <EditText
+                android:id="@+id/dCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=" 0 "
+                android:inputType="numberDecimal"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSaveDeliveryCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Save Delivery Charges"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offers"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etOffer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Offer 1"
+            />
+
+
+        <EditText
+            android:id="@+id/etOffer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Offer 2"
+            />
+
+
+        <EditText
+            android:id="@+id/etOffer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Offer 3"
+            />
+
+        <Button
+            android:id="@+id/btnSaveOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Save Minimum Value"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

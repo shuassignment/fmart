@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Cust_Account"
+            android:icon="@mipmap/ic_person_white_24dp"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_Cust_Categories"
+            android:icon="@mipmap/ic_list_white_24dp"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_Cust_MyOrders"
+            android:icon="@mipmap/ic_shopping_cart_white_24dp"
+            android:title="My Orders" />
+
+    </group>
+
+    <group android:id="@+id/abcgroup">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/ic_share_white_24dp"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_star"
+            android:icon="@mipmap/ic_stars_white_24dp"
+            android:title="Rate this app" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_info_white_24dp"
+            android:title="About Us" />
+
+    </group>
+
+    <item android:title="Logout"
+        android:icon="@mipmap/ic_power_settings_new_white_24dp"
+        android:onClick="CustLogout">
+
+    </item>
+   
+
+</menu>

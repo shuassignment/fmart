@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.my.fresh.mart.AboutUsActivity">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_about_us"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="#000"-->
+            <!--android:text="@string/AboutUs"/>-->
+    <!--</ScrollView>-->
+    <WebView
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:padding="@dimen/_12sdp"
+        android:scrollbars="none"
+        android:id="@+id/mainWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</android.support.constraint.ConstraintLayout>

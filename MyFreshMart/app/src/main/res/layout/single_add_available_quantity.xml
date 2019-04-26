@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Weight : "
+            android:textColor="@color/colorDarkGray"/>
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint=" 500gm / 1kg / 1Dozon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MRP : "/>
+        <EditText
+            android:id="@+id/etMRP"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="100"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/_5sdp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Offer Price : "/>
+        <EditText
+            android:id="@+id/etOfferPrice"
+            android:layout_weight="0.75"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="90"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

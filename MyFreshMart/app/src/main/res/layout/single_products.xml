@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_weight="0.45"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:src="@drawable/placehoder_image" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.55"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="@dimen/_4sdp">
+
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorFaintBlack"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/_4sdp"/>
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvMyCartproductDescrition"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Descrition "-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#111"-->
+                <!--android:textSize="12sp" />-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvMyCartProductPrice"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="₹ "-->
+                <!--android:textColor="#00796b"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tvDeliveryCharge"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Delivery Charge"-->
+                <!--android:textSize="10sp" />-->
+
+                <TextView
+
+                    android:id="@+id/tvMRP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/colorFaintBlack"
+                    android:padding="@dimen/_4sdp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/availableQuantity"
+                android:layout_above="@id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_background"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/_4sdp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available quantities"
+                        android:textColor="@color/colorFaintBlack"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:padding="@dimen/_2sdp"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+
+                    android:rotation="180"
+                    android:src="@mipmap/ic_expand_less_white_24dp"
+                    android:tint="@color/colorFaintBlack" />
+
+            </RelativeLayout>
+
+            <!-- todo check visibility -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <ImageButton
+                        android:id="@+id/ibIncreaseQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:src="@mipmap/ic_add_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Quantity" />
+
+                    <ImageButton
+                        android:id="@+id/ibDecreaseQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:src="@mipmap/ic_minus_black_24dp"
+                        android:tint="@color/colorPrimary" />
+
+                    <ImageButton
+                        android:id="@+id/btnMyCartRemoveFromCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:src="@drawable/ic_delete"
+                        android:tint="@color/colorPrimary" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@drawable/btn_background"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:text="Add to Cart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_acount"
+            android:icon="@mipmap/ic_person_white_24dp"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@mipmap/ic_file_upload_white_24dp"
+            android:title="Upload Products" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@mipmap/ic_shopping_cart_white_24dp"
+            android:title="Orders" />
+
+        <item
+            android:id="@+id/nav_customers"
+            android:icon="@mipmap/ic_group_white_24dp"
+            android:title="Customers" />
+
+        <item android:id="@+id/nav_see_product"
+            android:title="Products"
+            android:icon="@mipmap/ic_search_white_24dp"/>
+        <item android:id="@+id/nav_terms_condition"
+            android:title="Terms And Conditions"
+            android:icon="@mipmap/ic_search_white_24dp"/>
+
+        <item android:id="@+id/logout"
+            android:title="Log out"
+            android:onClick="ownerLogout"/>
+    </group>
+
+
+    <!--<group android:id="@+id/abc">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_share"-->
+            <!--android:icon="@mipmap/ic_share_white_24dp"-->
+            <!--android:title="Share" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_star"-->
+            <!--android:icon="@mipmap/ic_stars_white_24dp"-->
+            <!--android:title="Rate this app" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_about"-->
+            <!--android:icon="@mipmap/ic_info_white_24dp"-->
+            <!--android:title="About Us" />-->
+    <!--</group>-->
+
+    <group android:id="@+id/vv">
+        <item android:title="Switch to Customer version">
+            <menu>
+
+                <item android:id="@+id/nav_cust_ver"
+                    android:title="Switch"
+                    android:icon="@mipmap/ic_power_settings_new_white_24dp">
+
+
+                </item>
+            </menu>
+        </item>
+
+    </group>
+</menu>

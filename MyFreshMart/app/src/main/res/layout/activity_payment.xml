@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.paridiz.kart.PaymentActivity">
+
+        <TextView
+            android:id="@+id/showAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:text="Amount to be paid :"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPayBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="@dimen/_10sdp"
+        android:text="PAY"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp" />
+
+</RelativeLayout>

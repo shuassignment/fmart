@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.my.fresh.mart.ParidizActivity"
+    tools:showIn="@layout/app_bar_paridiz">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerdemo"></FrameLayout>
+<!--
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+
+        android:layout_alignParentBottom="true"
+        >
+
+    </com.google.android.gms.ads.AdView>
+-->
+
+</LinearLayout>

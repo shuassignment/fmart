@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Fresh Mart</string>
+    <string name="AboutUs">
+
+    </string>
+
+    <string name="title_activity_paridiz">ParidizActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="fb_login_protocol_scheme">fb1525832564172305</string>
+    <string name="title_activity_customer_paridiz_main">CustomerParidizMainActivity</string>
+    <string name="empty_cart">Your cart is empty</string>
+</resources>
